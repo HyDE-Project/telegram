@@ -177,7 +177,6 @@ main() {
 
 [ -e "$landingDir" ] && [ ! -d "$landingDir" ] && error "cache directory location already exists and is not a directory: $landingDir"
 mkdir -p "$landingDir" || error "unable to create cache directory: $landingDir"
-[ ! -d "${XDG_CACHE_HOME:-$HOME/.cache}/wal" ] && error "wal cache directory not found: ${XDG_CACHE_HOME:-$HOME/.cache}/wal"
 
 if command -v magick >/dev/null 2>&1; then
 	convert() { magick convert "$@"; }
