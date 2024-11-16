@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC2317
+
 
 # This is a modified version of walogram that works for HyDE
 # Credits to the original author and contributors
@@ -19,7 +21,9 @@
 
 # Default values
 scrDir="$(dirname "$(realpath "$0")")"
+# shellcheck disable=SC1091
 source "${scrDir}/globalcontrol.sh"
+# shellcheck disable=SC2154
 landingDir="${cacheDir}/landing"
 themename="Wallbash.tdesktop-theme"
 CONSTANT_STRING="$(sed -n '/^### TELEGRAM CONSTANTS ####/,$p' "$0" | sed '/^### TELEGRAM CONSTANTS ####/d')"
