@@ -21,7 +21,7 @@ To integrate this template,
 - `~/.config/hyde/wallbash/Wall-Dcol`
 
 2. Copy the `./wallbash.telegram.sh` to $PATH
-3. Run `Hyde reload`  or change a theme.
+3. Run `hydectl reload`  or change a theme.
 4. Using telegram's GUI add the `Wallbash.tdesktop-theme` file as a theme.
 
 - Navigate to **Settings** > **Chat Settings** > **Chat wallpaper** > **Choose from file** choose ` ~/.cache/hyde/landing/Wallbash.tdesktop-theme`
